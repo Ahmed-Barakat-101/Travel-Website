@@ -1,0 +1,643 @@
+@import url( 'https://fonts.googleapis.com/css?family=Comfortaa');
+*{
+font-family:'comfortaa' cursive;  /*     عامل زي الخط اليدوي*/
+margin: 0; padding: 0;
+box-sizing: border-box;
+outline: none; border: none;
+text-transform: capitalize;
+text-decoration: none;
+ }
+ :root{
+
+--black:#000;
+--main-color:#ff0;
+--light-black:rgba(0,0,0,.3);
+--light-white:rgba(255,255,255,.5);
+--light-bg:rgba(255,255,255,.1);
+--white:#fff;
+ }
+ html{
+font-size: 62.5%;
+overflow-x: hidden;
+scroll-behavior: smooth;
+scroll-padding-top: 5rem;
+ }
+*::selection{
+background-color: var(--main-color);
+
+color: var(--black);
+}
+body{
+   background-color:var(--black);
+}
+.container{
+padding-top: 10rem;
+
+}
+
+.home{
+background: url('../images/209.jpg') no-repeat  rgba(0, 0, 0, .5);
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+ background-blend-mode: multiply;/*     حتعملك زي الوضع الليلي*/
+}
+.home .flex{
+min-height: calc(100vh - 10rem);
+display: flex;
+ align-items: center;   
+ justify-content: center; 
+}
+.home .flex form {
+background-color: var(--light-bg);
+border-radius: .5rem;
+padding: 2rem;
+width: 50rem;
+backdrop-filter: blur(.4rem);
+}
+.home .flex form h3{
+font-size: 2.5rem;
+padding-bottom: 1rem;
+color: var(--white);
+text-align: center;
+}
+.home .flex form .box{
+
+width: 100%;
+
+border-radius: .5rem;
+padding: 1.4rem;
+font-size: 1.8rem;
+color: var(--light-white);
+text-transform: none;
+background: var(--light-black);
+margin: 1rem 0;
+}
+.home .flex form .box::placeholder{   /*  */
+    color: var( --light-white);
+    }
+     
+.home .flex form p{
+
+padding-top:1.7rem ;
+color: var(--light-white);
+
+}
+.btn{
+display: block;
+border-radius: .5rem;
+padding: 1.2rem 3rem;
+background-color: var(--light-black);
+color: var(--black);
+cursor: center;
+text-align: center;
+width: 100%;
+font-size: 1.8rem;
+margin-top:1rem ;
+transition:.2s linear ;  /*  الفترة ال حتخدها عشان تعمل hover*/
+}
+
+.btn:hover{
+
+background: var(--black);
+color:var(--white) ;
+}
+
+
+
+
+
+section{
+margin: 0 auto;   /*       حتوسطن العنصار افقيا  */
+max-width: 1200px;
+padding:2rem;
+
+}
+.header{
+    position: fixed;  /*       يعني خليها ثابتة حتى لو اتحركت في الصفحة */
+    top: 0; left: 0; right: 0;
+    background: linear-gradient(0deg,transparent,var(--black));
+    z-index: 1000; /* يعني زي ما اكون بقوله دا اكثر عنصر عايزك تعرضه*/
+}
+.header .flex{
+display: flex;
+align-items: center;
+
+justify-content: space-between;
+gap: 1.55rem;  /* بتتحكم بين المسافات بين العناصر*/
+
+}
+.header .flex .logo{
+font-size: 2.5rem;
+color:var(--main-color);
+}
+.header .flex .navbar a{
+margin-left:2rem;
+font-size: 1.8rem;
+color: var(--light-white);
+transition: .2s  linear;
+}
+.header .flex .navbar a:hover{
+color: var(--white);
+}
+#menu-btn{
+font-size: 2.5rem;
+cursor: pointer;
+color: var(--white);
+display: none;
+}
+
+
+/*     ABOUT                    */
+.about{
+    background: url('../images/1014.jpg') no-repeat  rgba(0, 0, 0, .5);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply; 
+}
+.about .details{
+
+   
+display: flex;
+
+align-items: center;
+justify-content: center;
+padding: 2rem;
+border-radius: .5rem;
+}
+.about .details .box{
+
+width: 50rem;
+background-color:var(--light-bg) ;
+padding: 3rem 2rem;
+text-align: center; 
+      backdrop-filter: blur(.4rem);    
+}
+.about .details .box h3{
+padding-bottom: .5rem;
+font-size: 2.5rem;
+color: var(--white);
+}
+.about .details .box p{
+
+padding: 1rem 0;
+font-size: 1.6rem;
+color: var(--light-white);
+line-height: 2;
+
+
+}
+.about .details .box .btn{
+    display: inline-block;
+    width: auto;
+    
+}
+.about .grid{
+display: grid;
+grid-template-columns: repeat(auto-fit,30rem);
+align-items: flex-start;
+justify-content: center;
+gap: 1.5rem;
+margin-top: 3rem;
+}
+.about .grid .box{
+
+
+    background: var(--light-bg);
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(.4rem);
+    border-radius: .5rem;
+}
+ 
+.about .grid .box img{
+
+height: 20rem;
+margin-bottom: 1rem;
+
+}
+
+.about .grid .box h3{
+padding: 2rem 0;
+font-size: 2rem;
+color: var(--white);
+}
+
+.about .grid .box p{
+
+    line-height: 2;
+    font-size: 1.5rem;
+    color: var(--light-white);
+}
+
+.about .grid .box :hover{
+   background: var(--light-black); 
+ 
+}
+
+ 
+ 
+/* review style*/
+.hhh{
+    width:45%;
+    height:10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.reviews {
+
+    background: url('../images/1012.jpg') no-repeat  rgba(0, 0, 0, .9);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.heading{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size:6rem;
+color: var(--white);
+text-transform: uppercase;
+text-align:center;
+margin-bottom:4rem ;
+}
+.reviews .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,30rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.reviews .grid .box{
+
+    background: var(--light-bg);
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(.4rem);
+    border-radius: .5rem;
+}
+.reviews .grid .box h3{
+font-size: 2rem;
+color: var(--white);
+
+
+}
+ 
+.reviews .grid .box p{
+    padding: 1rem 0;
+line-height: 2rem;
+color: var(--light-white);
+font-size: 1.5rem;
+}
+.reviews .grid .box .stars{
+    font-size: 1.5rem;
+}
+.reviews .grid .box:hover{
+background-color: var(--light-black);
+
+
+}
+.tours{
+    background: url('../images/10000.jpg') no-repeat  rgba(0, 0, 0, .9);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+ 
+}
+.tours .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,30rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+
+
+
+}
+
+.tours .grid .box{
+    background: var(--light-bg);
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(.4rem);
+    border-radius: .5rem;
+
+
+}
+
+
+.tours .grid .box .ddd{
+ width: 100%;
+height: 20rem;
+object-fit: cover;
+border-radius: .5rem;
+margin-bottom: 1.5rem;
+}
+.tours .grid .box .name{
+font-size:2rem ;
+color: var(--white);
+}
+.tours .grid .box .price{
+position: absolute;
+top: 3rem; left: 2.5rem;
+font-size: 1.8rem;
+background-color: var(--light-black);
+border-radius: .5rem;
+ padding-top: .8rem;
+ padding: .5rem .5rem;
+ cursor: pointer;
+}
+.tours .grid .box .price i{
+
+color: var(--main-color);
+ 
+margin-right: .5rem;
+}
+.tours .grid .box .price span{
+
+    color: var(--white);
+}
+.tours .grid .box .address{
+    font-size: 1.7rem;
+color: var(--light-white);
+line-height: 1.5rem;
+padding: .5rem 0;
+}
+
+.tours .grid .box:hover{
+background-color: var(--light-black);
+cursor: pointer;
+}
+.tours .grid .box:hover .price {
+    background-color: var(--black);
+    
+    }
+.destination{
+    background: url('../images/10000.jpg') no-repeat  rgba(0, 0, 0, .9);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.destination .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,30rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.destination .grid .box{
+    background: var(--light-bg);
+   position: relative;
+    text-align: center;
+    backdrop-filter: blur(.4rem);
+    border-radius: .5rem;
+height: 40rem;
+
+overflow: hidden;
+}
+.destination .grid .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+}
+.destination .grid .box h3{
+position: absolute;
+top: 0;
+height: 100%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: var(--light-black);
+backdrop-filter: blur(.4rem);
+opacity: 0;   /* حتخلي النص والصورة يحصلهم هوفر*/
+}
+.destination .grid .box h3 span{
+color: var(--white);
+font-size: 2.5rem;
+ 
+}
+.destination .grid .box h3:hover{
+
+    opacity: 1;
+}
+.contact{
+    background: url('../images/209.jpg') no-repeat  rgba(0, 0, 0, .9);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.contact .row{
+display: flex;
+flex-wrap: wrap;
+gap: 2rem;
+}
+.contact .row .map{
+width: 100%;
+flex: 1 1 40rem;  /*      */
+background-color: var(--light-bg);
+border-radius: .5rem;
+backdrop-filter: blur(.4rem);
+}
+.contact .row form{
+    width: 100%;
+    flex: 1 1 40rem;  /*      */
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+    backdrop-filter: blur(.4rem);
+    }
+    .contact .row form h3{
+text-align: center;
+font-size: 2.5rem;
+color: var(--white);
+padding-bottom: 1rem;
+    } 
+    .contact .row form .box{
+width: 100%;
+margin: 1rem  0;
+border-radius: .5rem;
+background-color: var(--light-black);
+padding: 1.4rem;
+font-size: 1
+8rem;
+color: var(--white);
+text-transform: none;
+    }
+    .contact .row form .box::placeholder{
+color: var(--light-white);
+
+
+    }
+    .contact .row form textarea{
+        height: 15rem;
+        resize: none;
+    }
+.btn{
+    background-color: var(--main-color);
+}
+.contact .grid{
+
+margin-top: 3rem;
+display: grid;
+grid-template-columns: repeat(auto-fit,30rem);
+align-items: flex-start;
+justify-content: center;
+gap: 1.5rem;
+
+
+}
+.contact .grid .box{
+    background: var(--light-bg);
+    padding: 2rem;
+     backdrop-filter: blur(.4rem);
+     border-radius: .5rem;
+ border-radius: .5rem;
+ text-align: center;
+
+}
+
+.contact .grid .box i {
+height: 5rem;
+width: 6rem;
+font-size: 2.5rem;
+line-height: 5rem; /* ظبط والله*/
+background-color:var(--light-black) ;
+border-radius: .5rem;
+color: var(--white);
+}
+.contact .grid .box h3{
+padding: 1rem 0;
+font-size: 2rem;
+color: var(--main-color);
+
+
+}
+.contact .grid .box a{
+display: block;  /* */
+padding-top: 1rem;
+font-size: 1.6rem;
+color: var(--light-white);
+line-height: 1.5rem;
+}
+
+.contact .grid .box a:hover{
+
+    color: var(--white);
+
+    text-decoration: underline;
+}
+.contact .credit{
+
+text-align: center;
+font-size: 2rem;
+padding-top: 1.5rem;
+padding-bottom: 2rem;
+color: var(--light-white);
+}
+.contact .credit span{
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+/*jتنسيق العناصر */
+
+
+@media(max-width:991px){
+
+   html{
+
+font-size: 55%;
+
+   }
+}
+
+@media(max-width:768px){
+
+#menu-btn{
+display: inline-block;
+
+}
+.header .flex{
+    position: relative;
+}
+.heading{
+    font-size:5rem;
+}
+
+ .header .flex .navbar{
+position: absolute;
+top: 100%;  right: 2rem; left: 2rem;
+background-color: var(--light-black);
+backdrop-filter: blur(.4rem);   /* شفاف*/
+border-radius: .5rem;
+
+margin: 0 auto;
+transform: scale(0);  /*   */
+transform-origin: top right;
+padding: 1.5rem 1.5rem;
+ }
+
+
+ .header .flex .navbar.active{  /*          */
+
+transform: scale(1);
+transition: .2s  linear;
+
+ }
+ .header .flex .navbar a{
+display: block;
+padding: 1.5rem  .5rem;
+margin:  .5rem 1.5rem;
+color: var(--white);
+border-radius: .5rem;
+ }
+
+.header .flex .navbar a:hover {
+
+background-color:var(--light-bg);
+
+
+}
+
+
+ }
+ 
+ 
+
+
+
+
+@media(max-width:450px){
+
+    html{
+ 
+ font-size: 50%;
+ 
+    }
+    .heading{
+        font-size:2.5rem;
+    }
+ }
+ 
+ 
+
+
+
